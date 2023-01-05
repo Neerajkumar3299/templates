@@ -44,6 +44,7 @@ body{
     position: absolute;
     bottom: 20px;
     left: 20px;
+    color: rgb(22, 89, 145);
 }
 .right-content{
     width: 58%;
@@ -125,6 +126,14 @@ h3{
 
 .work-experience-item,.education-item,.project-item{
     padding: 20px 10px;
+}
+.line{
+    width: 100%;
+    padding: 1px;
+    /* background-color: grey; */
+    margin-top: 20px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(243, 238, 238);
 }
 .education-period{
     padding: 10px 0px;
