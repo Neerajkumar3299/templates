@@ -1,0 +1,291 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:Verdana, sans-serif;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 3px solid red; */
+    position: relative;
+}
+
+/* --------------- Navbar ------------------- */
+.navbar{
+    width: 100%;
+    padding: 10px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.logo{
+    /* border: 3px solid yellow; */
+    width: 50%;
+    text-align: center;
+}
+.logo>h4,.home>h4{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.logo>h4>span,.home>h4>span{
+    font-weight: 700;
+}
+.links{
+    /* width: 80%; */
+    /* border: 3px solid green; */
+}
+.links>ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    
+}
+.links>ul>li{
+    margin-right: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(37, 36, 36);
+        letter-spacing: 2px;
+}
+.links a:hover{
+    cursor: pointer;
+    color: rgb(64, 60, 60);
+
+}
+
+/* ------------------ Home ----------------------- */
+
+.home{
+    width: 98%;
+    margin: 20px auto;
+    position: relative;
+    z-index: -1;
+}
+.home>img{
+    width: 100%;
+}
+.home>h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home>h4{
+    font-size: 35px;
+}
+.home>h4>span{
+    padding: 10px;
+    background-color: rgba(29, 28, 28,0.3);
+}
+
+/* ---------------------- Projects ------------------------- */
+.projects-section{
+    width: 100%;
+    /* border: 3px solid red; */
+    padding: 20px;
+}
+.projects-section>p,#about,#contact{
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid rgb(238, 231, 231);
+    margin-bottom: 10px;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid green; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:relative;
+    z-index: -1;
+}
+.project-item{
+    width: 24%;
+    /* border: 2px solid blue; */
+    position: relative;
+    margin-top: 10px;
+}
+.project-item>img{
+    width: 100%;
+}
+.project-item>button{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    padding: 10px 20px;
+    /* border: none; */
+    background: black;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 550;
+}
+.project-item:hover button{
+    display: block;
+}
+.project-item>button:hover{
+    cursor: pointer;
+    background-color: rgb(49, 47, 47);
+    color: white;
+}
+/* ----------------------- About ----------------------- */
+.about-section{
+    padding: 15px;
+}
+.about-section>p{
+    margin-bottom: 10px;
+}
+.about{
+    width: 100%;
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contributer{
+    width: 22%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contributer>img{
+    width: 100%;
+}
+.contributer>h2,.contributer>p,.contributer>button{
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* .contributer>p{
+    color: rgb(54, 52, 52);
+} */
+.role{
+    color: rgb(101, 96, 96);
+}
+.contributer>button{
+    border: none;
+    background-color: rgb(227, 220, 220);
+    padding: 8px 20px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    color: black;
+}
+
+
+
+/* ---------------------- Contact ------------- */
+.contact{
+    width: 100%;
+    /* border: 2px solid blue; */
+    padding: 15px;
+}
+.contact>p{
+    margin-bottom: 10px;
+}
+.contact>form{
+    width: 100%;
+    /* border: 2px solid pink; */
+}
+.contact>form>input{
+    padding: 8px 20px;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+}
+.contact>form>button{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+/* ------------------- Location -------------- */
+.location{
+    padding: 15px;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+.location>img{
+    width: 100%;
+}
+
+/* ------------------------ Footer ------------- */
+footer{
+    width: 100%;
+    /* border: 2px solid pink; */
+    padding: 20px;
+    background-color: rgba(205, 219, 215, 0.2);
+}
+footer>p{
+    text-align: center;
+    color: blue;
+}
+
+
+/* -------------------------- Media Query ------------------------ */
+@media screen and (max-width:890px){
+    .project-item,.contributer{
+        width: 48%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:522px){
+    .navbar{
+        flex-direction: column;
+        justify-content: left;
+
+    }
+    .logo{
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+    .links{
+        width: 100%;
+    }
+    .links>ul{
+        flex-direction: column;
+    }
+    .links>ul>li{
+        padding: 10px;
+    }
+    .home>h4{
+        width: 100%;
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+    .projects,.about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-item,.contributer{
+            width: 95%;;
+            margin-top: 20px;
+        }
+}
